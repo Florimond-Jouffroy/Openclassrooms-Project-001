@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/*
+    Menu top
+*/
+#menu-top
+{
+    background-color: #010101;
+}
+
+#menu-top > div
+{
+    padding: 1em;
+    color: rgb(236 88 72);
+}
+#menu-top > div > h1
+{
+    font-size: 30px;
+}
+#menu-top > div > h2
+{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.cv-cards
+{
+    padding: 15px;
+}
+
+.card
+{
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-head
+{
+  margin-bottom: 1em;
+}
+.card-head > p
+{
+    color: rgb(236 88 72);
+    font-weight: 500;
+}
+
+.card-head > p:last-child
+{
+    color: #000;
+}
+
+.skills
+{
+    display: flex;
+    width: 100%; /*210px*/
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+
+
+.grey-bar
+{
+    width: 100px;
+    align-self: center;
+    background-color: #cecece;
+    
+    height: 10px;
+    
+    border-radius: 3px;
+    
+    
+}
+
+.progress-bar
+{
+    display: block;
+   
+   
+    height:10px;
+    background: rgb(236 88 72); 
+    border-radius: 3px;
+
+    transition: width 500ms ease-in-out;
+}
+
+
+.skills-card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+
+.card-portrait
+{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.bloc-portrait
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    align-self: center;
+}
+
+#portrait
+{
+    width: 250px;
+    
+    position: relative;
+    left: -25px;
+    top: -10px;
+}
+
+.bloc-infos
+{
+   text-align: center;
+   font-size: 18px;
+   font-weight: 500;
+   margin-top: 1em;
+}
+
+
+footer
+{
+    padding: 15px;
+    height: 200px;
+    background-color: #010101;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (min-width: 800px) 
+{
+    .cv-cards h2
+    {
+       text-align: center;
+    }
+    .articles
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .card
+    {
+        width: 300px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) 
+{
+    .cv-cards
+    {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    #menu-top div{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+}
