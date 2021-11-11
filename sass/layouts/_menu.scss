@@ -1,0 +1,23 @@
+
+.header{
+    background-color:$colour-secondary;
+
+    &__heading{
+        padding: 1em;
+        color: $colour-primary;
+
+        @include desktop{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        &--main-title{
+            font-size: 30px;
+        }
+        &--scondary-title
+        {
+            font-size: 15px;
+        }
+    }
+}
+

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layouts/menu";
+@import "./layouts/card";
+@import "./layouts/footer";
+
+
+.container{
+    padding: 15px;
+    @include tablette{
+        h2{
+            text-align: center;
+        }
+    }
+    @include desktop{
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.articles{
+    @include tablette {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        
+    }
+
+    
+}
